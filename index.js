@@ -1,4 +1,4 @@
-var Gebruiker = require('/Users/klaas/Code/ing/gebruiker.js');
+var Gebruiker = require('./gebruiker.js');
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
