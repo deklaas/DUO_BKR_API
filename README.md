@@ -22,3 +22,5 @@ Output ex.
 ```
 Gebruik een REST client om makkelijk te posten naar de DB, er is een mongo in de app die je kunt gebruiken maar makkelijkste is zelf eentje opzetten
 ![alt text](http://i.imgur.com/jE57XJm.png "Logo Title Text 1")
+
+De BSN moet altijd uniek zijn in de app om te werken. 
