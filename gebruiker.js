@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 //nothing special
 var GebruikerSchema = new Schema({
   name: String,
-  //bsn should be unique 
+  //bsn should be unique
   bsn: {
     type: String,
     unique: true
