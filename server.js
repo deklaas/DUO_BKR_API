@@ -6,6 +6,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Schema = mongoose.Schema;
 var app = express();
+var port = process.env.PORT || 8080;
 
 process.env.NODE_ENV = 'production';
 //CONFIG
@@ -108,6 +109,6 @@ app.get('/gebruikers', function(req, res) {
 })
 
 // starting the server
-var server = app.listen(8080, function() {
+var server = app.listen(port, function() {
   console.log('server is running..');
 });
