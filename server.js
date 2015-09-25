@@ -102,6 +102,6 @@ app.get('/gebruikers', function(req, res) {
 })
 
 // starting the server
-var server = app.listen(3000, function() {
+var server = app.listen(8080, function() {
   console.log('server is running..');
 });
