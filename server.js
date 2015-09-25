@@ -4,22 +4,28 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var path = require('path');
+var jade = require('jade');
 var Schema = mongoose.Schema;
 var app = express();
 var port = process.env.PORT || 8080;
 
-process.env.NODE_ENV = 'production';
+
 //CONFIG
 // use body parser so we can grab information from POST requests
+app.use(express.static(__dirname + '/public'));
+process.env.NODE_ENV = 'production';
+app.set('view engine', 'jade');
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.render('index', {
+    title: 'Hey',
+    message: 'Hello there!'
+  });
 });
-
 // configure our app to handle CORS requests
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');

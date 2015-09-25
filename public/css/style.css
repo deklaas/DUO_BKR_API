@@ -1,0 +1,25 @@
+body {
+  background-color: grey;
+}
+
+h2 {
+text-align: center;
+}
+
+form {
+  text-align: left;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  width: 100%;
+}
+
+.invoer {
+  background-color: white;
+  width: 30%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+html
+  head
+    title!= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h2 je kan hier gebruikers toevoegen
+      .invoer
+        form(action="/gebruikers", method="post")
+          | Naam:
+          input(type="text", name="name")
+
+          | BSN:
+          input(type="text", name="bsn")
+          
+          | DUO:
+          input(type="text", name="duo")
+
+          | BKR:
+          input(type="text", name="bkr")
+          
+          input(type="submit", value="Submit")
