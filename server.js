@@ -7,6 +7,7 @@ var path = require('path');
 var Schema = mongoose.Schema;
 var app = express();
 
+process.env.NODE_ENV = 'production';
 //CONFIG
 // use body parser so we can grab information from POST requests
 app.use(bodyParser.urlencoded({
