@@ -1,20 +1,26 @@
 {
-  "name": "ing",
+  "name": "duo_bkr_api",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "engines": {
-    "node": "4.1.1"
-  },
+  "description": "demo api voor TOCBA",
+  "main": "gebruiker.js",
   "scripts": {
-    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deklaas/DUO_BKR_API.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deklaas/DUO_BKR_API/issues"
+  },
+  "homepage": "https://github.com/deklaas/DUO_BKR_API#readme",
   "dependencies": {
-    "body-parser": "~1.14.0",
-    "express": "~4.13.3",
-    "mongoose": "~4.1.8",
-    "morgan": "~1.6.1"
+    "body-parser": "1.14.0",
+    "express": "4.13.3",
+    "mongoose": "4.1.8",
+    "morgan": "1.6.1"
   }
 }
